@@ -1,0 +1,24 @@
+/* Com isso começamos a ter nossa lista de imagens */
+.avatar-list{
+    list-style: none;
+    display: flex;
+}
+
+.avatar-list img{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+/* 
+Ajustamos cada li pra esquerda para empilhar */
+.avatar-list li{
+    margin-left: -28px;
+    transition: translate 250ms;
+}
+
+/* Quando passar o mouse empurramos 36px */
+.avatar-list li:hover~li{
+    translate: 36px;
+}
